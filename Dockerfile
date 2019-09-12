@@ -1,7 +1,8 @@
 FROM alpine:3.10
 LABEL MAINTAINER="Artyom Nosov <chip@unixstyle.ru>"
 
-RUN apk add --no-cache \
+RUN apk update \
+ && apk add --no-cache \
       python \
       groff \
       less \
