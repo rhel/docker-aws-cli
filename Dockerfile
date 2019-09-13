@@ -11,7 +11,7 @@ RUN apk update \
       py-pip \
  && pip install --upgrade awscli s3cmd python-magic \
  && curl -o /usr/local/bin/ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest \
- && chmod +x /usr/local/bin/ecs-cli
+ && chmod +x /usr/local/bin/ecs-cli \
  && apk --purge del .build-deps \
  && rm -fr /var/cache/apk/*
 
