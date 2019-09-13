@@ -3,6 +3,7 @@ LABEL MAINTAINER="Artyom Nosov <chip@unixstyle.ru>"
 
 RUN apk update \
  && apk add --no-cache \
+      jq \
       python \
       groff \
       less \
